@@ -1,0 +1,33 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/Parquetry.proto"
+EXTERNPROTO "../protos/anymal.proto"
+
+WorldInfo {
+  basicTimeStep 8
+}
+Viewpoint {
+  orientation 0.3259849056136177 0.13828241339146147 -0.9352068303101264 2.3862437814106054
+  position 3.2474899875849608 3.955845279098868 4.678124253708391
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+  castShadows FALSE
+}
+RectangleArena {
+  floorSize 10 10
+  floorAppearance Parquetry {
+    type "light strip"
+  }
+  wallThickness 0.5
+  wallHeight 2
+}
+anymal {
+  translation 0 0 0.88
+  name "anymal0"
+  controller "drive_robot"
+}
